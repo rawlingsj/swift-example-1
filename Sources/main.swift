@@ -9,4 +9,6 @@ server["/"] = { request in
 }
 try server.start(8080)
 print("Server has started ( port = 8080 ). Try to connect now...")
-NSRunLoop.mainRunLoop().run()
+
+while true {
+}
