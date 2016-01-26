@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/swift/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "swift-example-11"
+codeReview: false
+links:
+  Git: "https://github.com/rawlingsj/swift-example-1.git"
+  Job: "http://172.30.211.13:80/job/swift-example-11"
+  Production: "http://172.30.251.93:80/kubernetes/pods?namespace=swift-example-11-production"
+  Staging: "http://172.30.251.93:80/kubernetes/pods?namespace=swift-example-11-staging"
+environments:
+  Staging: "swift-example-11-staging"
+  Production: "swift-example-11-production"
+useLocalFlow: true
